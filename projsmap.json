@@ -1,0 +1,7 @@
+[
+  {
+    "name":"Quiz Time!",
+    "desc": "A simple quiz game.",
+    "path": "./exercises/01-quiztime"
+  }
+]
