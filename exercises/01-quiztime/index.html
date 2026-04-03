@@ -3,13 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css" >
-  <title>Quiz Time!</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <title>KH Quiz Time!</title>
 </head>
 <body>
   <div class="container">
     <div class="screen active" id="start-screen">
-      sarve
+      <h1>Kingdom Hearts Quiz!</h1>
+      <p> Teste seus conhecimentos Heartsristicos com as seguintes questões. </p>
+      <button id="btn-start"> Iniciar Quiz </button>
+    </div>
+
+    <div class="screen" id="quiz-screen">
+      <div class="quiz-header">
+        <h2 id="question-txt">Test?</h2>
+      </div>
+
+      <div class="quiz-info">
+        <p>Pergunta <span id="curr-quest-idx">1</span> de <span id="max-questions">1</span> </p>
+        <p>Pontuação: <span id="score">0</span></p>
+      </div>
+      
+      <div class="progress-bar">
+        <div id="progress" class="progress"></div>
+      </div>
+
+      <div id="answers-container" class="answers-container">
+        <button class="answer-btn">Tesing</button>
+      </div>
+    </div>
+
+    <div class="screen" id="result-screen">
+      <h1>Resultado</h1>
+      <div class="result-info">
+        <p>Você pontuou <span id="final-score">1</span> de <span id="max-score">1</span></p>
+        <p id="result-msg">Kinda Mid...</p>
+      </div>
+
+      <button id="restart-quiz">Tente Novamente!</button>
     </div>
   </div>
 
