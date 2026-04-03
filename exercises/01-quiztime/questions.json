@@ -3,55 +3,55 @@
     "question": "<em>\"Darkness within darkness awaits you!\"</em>. Quem disse isso?",
     "correctAns": 0,
     "options": [
-      {"text": "Ansem, the Seeker of Darkness"},
-      {"text": "Ansem, the Wise"},
-      {"text": "Master Xehanort"},
-      {"text": "King Mickey"},
-      {"text": "Maleficent"}
+      "Ansem, the Seeker of Darkness",
+      "Ansem, the Wise",
+      "Master Xehanort",
+      "King Mickey",
+      "Maleficent"
     ]
   },
   {
     "question": "Melhor vilão?",
     "correctAns": 3,
     "options": [
-      {"text": "Terranort cientista drippado"},
-      {"text": "Hades"},
-      {"text": "Ursula"},
-      {"text": "Ansem, the Seeker of Darkness"},
-      {"text": "Xigbar"}
+      "Terranort cientista drippado",
+      "Hades",
+      "Ursula",
+      "Ansem, the Seeker of Darkness",
+      "Xigbar"
     ]
   },
   {
     "question": "Principal obsessão do Nomura?",
     "correctAns": 1,
     "options": [
-      {"text": "DARKNESS"},
-      {"text": "Cintos, muitos cintos"},
-      {"text": "Personagens femininas fracas"},
-      {"text": "Disney"},
-      {"text": "Fazer jogos não numerados que quase ninguém vai jogar"}
+      "DARKNESS",
+      "Cintos, muitos cintos",
+      "Personagens femininas fracas",
+      "Disney",
+      "Fazer jogos não numerados que quase ninguém vai jogar"
     ]
   },
   {
     "question": "PIOR mundo de Kingdom Hearts?",
     "correctAns": 4,
     "options": [
-      {"text": "Tron"},
-      {"text": "Atlantica no Kingdom Hearts 1"},
-      {"text": "Monstro"},
-      {"text": "Lilo and Stich"},
-      {"text": "Atlantica no Kingdom Hearts 2"}
+      "Tron",
+      "Atlantica no Kingdom Hearts 1",
+      "Monstro",
+      "Lilo and Stich",
+      "Atlantica no Kingdom Hearts 2"
     ]
   },
   {
     "question": "Numa partida de truco, quem ganha?",
     "correctAns": 4,
     "options": [
-      {"text": "Luxord"},
-      {"text": "Eraqus"},
-      {"text": "Pence"},
-      {"text": "Xigbar"},
-      {"text": "Yuffie"}
+      "Luxord",
+      "Eraqus",
+      "Pence",
+      "Xigbar",
+      "Yuffie"
     ]
   }
 ]

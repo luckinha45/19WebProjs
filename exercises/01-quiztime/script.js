@@ -24,7 +24,7 @@ document.querySelector("#btn-start").addEventListener("click", () => {
 
   startScreen.classList.remove("active");
   quizScreen.classList.add("active");
-  
+
   loadNxtQuestion();
 });
 
@@ -34,10 +34,11 @@ document.querySelector("#restart-quiz").addEventListener("click", () => {
 });
 
 
-function checkAnswer(idx, opt, ev) {
+function checkAnswer(ev) {
   const btn = ev.target;
+  const idx = gameState.currQuestionIdx;
 
-  if (opt == questions[idx].correctAns) {
+  if (btn.dataset.correct === 'true') {
     btn.classList.add('correct');
     gameState.score++;
   }
@@ -50,7 +51,7 @@ function checkAnswer(idx, opt, ev) {
   ctrPressedAnswer.abort();
 
   gameState.currQuestionIdx++;
-  setTimeout(() => loadNxtQuestion(), 2000);
+  setTimeout(() => loadNxtQuestion(), 1000);
 }
 
 
@@ -62,7 +63,7 @@ function loadNxtQuestion() {
   }
 
   // att a barra de progresso
-  document.querySelector("#progress").style.width = `${gameState.currQuestionIdx / questions.length*100}%`;
+  document.querySelector("#progress").style.width = `${(gameState.currQuestionIdx+1) / questions.length*100}%`;
 
   ctrPressedAnswer = new AbortController();
   const idx = gameState.currQuestionIdx;
@@ -78,9 +79,12 @@ function loadNxtQuestion() {
     
     const btn = document.createElement('button');
     btn.classList.add('answer-btn');
-    btn.innerHTML = opt.text;
+    btn.innerHTML = opt;
+
     btn.id = 'ansbtn-' + n;
-    btn.addEventListener('click', ev => checkAnswer(idx, n, ev), { signal })
+    btn.dataset.correct = n === questions[idx].correctAns;
+
+    btn.addEventListener('click', checkAnswer, { signal })
     ansContainter.appendChild(btn);
   });
 }
@@ -98,7 +102,7 @@ function finishGame() {
       resultMsg = "Não tens o que é necessário...";
       break;
     case 1:
-      resultMsg = "Tão sábio quanto um Shadow.";
+      resultMsg = "Tão sábio quanto uma Shadow.";
       break;
     case 2:
       resultMsg = "Kinda mid.";
