@@ -12,7 +12,6 @@ if (gridProjs) {
     pdiv.addEventListener('click', () => window.location = proj.path)
     pdiv.innerHTML = `
       <h3> ${proj.name} </h3>
-      <p> ${proj.desc} </p>
     `.replaceAll('\n', ' ').trim();
 
     gridProjs.appendChild(pdiv);

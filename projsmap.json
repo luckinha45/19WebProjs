@@ -1,7 +1,10 @@
 [
   {
     "name":"Quiz Time!",
-    "desc": "A simple quiz game.",
     "path": "./exercises/01-quiztime"
+  },
+  {
+    "name":"Gerador de Paleta",
+    "path": "./exercises/02-color-palette"
   }
 ]
